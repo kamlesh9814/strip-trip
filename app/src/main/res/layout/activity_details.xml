@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan"
+    tools:context=".activity.TripDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/flightLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_285sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/black_cornour_radious"
+            android:backgroundTint="@color/light_gray"
+            app:cardCornerRadius="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.exoplayer2.ui.StyledPlayerView
+                android:id="@+id/exoPlayersViews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:use_controller="false"
+                app:resize_mode="fill"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backIV"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:src="@drawable/white_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/postNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/walk_up"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/flightLayout"
+            app:layout_constraintTop_toBottomOf="@+id/flightLayout" />
+
+        <TextView
+            android:id="@+id/PostDescriptionTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingEnd="@dimen/_2sdp"
+            android:text="@string/richard_mcclintock_a_latin_professor_at_hampden_sydney"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/flightLayout"
+            app:layout_constraintTop_toBottomOf="@+id/postNameTv" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/IVLocation"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/location_logo"
+            app:layout_constraintStart_toStartOf="@+id/PostDescriptionTv"
+            app:layout_constraintTop_toBottomOf="@+id/PostDescriptionTv" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/_206_21st_ave_s"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/IVLocation"
+            app:layout_constraintTop_toTopOf="@+id/IVLocation"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/IVSun"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:src="@drawable/sun"
+            app:layout_constraintStart_toStartOf="@+id/IVLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/_11_00_am_26_jun_2022"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toEndOf="@+id/IVSun"
+            app:layout_constraintTop_toBottomOf="@+id/IVSun"
+            app:layout_constraintTop_toTopOf="@+id/IVSun" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

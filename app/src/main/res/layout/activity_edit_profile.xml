@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:windowSoftInputMode="adjustPan"
+    tools:context=".activity.EditProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backImageView"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/bold_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/edit_profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/backImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/backImageView"
+            app:layout_constraintTop_toTopOf="@+id/backImageView" />
+
+
+        <RelativeLayout
+            android:id="@+id/profileImageLayout"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEditProfile">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="140.5dp"
+                android:layout_height="147.5dp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="@dimen/_30sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="140.5dp"
+                    android:layout_height="147.5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/human" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tvCamera"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_alignEnd="@+id/cardView"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="-13dp"
+                android:elevation="10dp"
+                android:src="@drawable/camera"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/NameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/issue_drawable"
+            app:layout_constraintTop_toBottomOf="@+id/profileImageLayout">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerVertical="true"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/name"
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="13sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/EmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/issue_drawable"
+            app:layout_constraintTop_toBottomOf="@+id/NameLayout">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerVertical="true"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/email"
+                    android:includeFontPadding="false"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="13sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phoneNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_marginHorizontal="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/issue_drawable"
+            app:layout_constraintTop_toBottomOf="@+id/EmailLayout">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerVertical="true"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="@string/phone_number"
+                    android:includeFontPadding="false"
+                    android:inputType="phone"
+                    android:maxLines="10"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="13sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/saveLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/custom_round_corner_app_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumberLayout"
+            tools:layout_editor_absoluteX="26dp">
+
+            <TextView
+                android:id="@+id/loginTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="end"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/save"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

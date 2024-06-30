@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_65sdp"
+    android:id="@+id/item"
+    android:background="@drawable/cornours_drawable"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:backgroundTint="@color/profileBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.TripsTabFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="64.5dp"
+        android:layout_height="65.5dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardElevation="5dp"
+        android:layout_marginStart="@dimen/_7sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="64.5dp"
+            android:layout_height="65.5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tour" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/descriptionTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/world_tour"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:textSize="@dimen/_10ssp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+
+    <TextView
+        android:id="@+id/ivShare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/solo"
+        android:textColor="@color/light_gray"
+        android:visibility="gone"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/descriptionTv"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTv" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

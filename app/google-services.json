@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1052116155442",
+    "project_id": "stripsandtrips",
+    "storage_bucket": "stripsandtrips.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052116155442:android:984d22ae19399caee3102b",
+        "android_client_info": {
+          "package_name": "com.app.stripstrips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052116155442-t3d6rn6ntjr2qiqtheu0sgk9ahc6fmgo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.stripstrips",
+            "certificate_hash": "d4a54a5ad30a0d0150049cb9b625d662776b3c4e"
+          }
+        },
+        {
+          "client_id": "1052116155442-0sbntiho1eigo3k8c9hvv24hr9oujtnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq5CVtcYoGYLE77F7_SRhoZ9Ll7wsYOSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052116155442-0sbntiho1eigo3k8c9hvv24hr9oujtnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

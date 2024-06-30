@@ -1,0 +1,78 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Strip&amp;trip</string>
+    <string name="welcome">Welcome</string>
+    <string name="we_are_glad_to_see_you_please_fill_your_information_to_continue">We are glad to see you.\n\Please fill your information to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login_in">Login</string>
+    <string name="please_enter_your_registered_email_address_for_recover_your_password">Please enter your registered email\n\address for recover your password</string>
+    <string name="submit">Submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="fraoou_lkosa">Fraoou Lkosa</string>
+    <string name="fraooulkosa_gmail_com">fraooulkosa@gmail.com</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="change_password">Change Password</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save">Save</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="let_s_create">Let’s Create</string>
+    <string name="add_post">Add Post</string>
+    <string name="name_of_the_picture_video">Name of the Picture/video</string>
+    <string name="location">Location</string>
+    <string name="trip_diary">Trip Diary</string>
+    <string name="description">Description</string>
+    <string name="privacy">Privacy</string>
+    <string name="post">Post</string>
+    <string name="trips">Trips</string>
+    <string name="trip">Trip</string>
+    <string name="trips_shared_by_others">Trips shared by others</string>
+    <string name="world_tour">World Tour</string>
+    <string name="solo">Solo</string>
+    <string name="add_trip_diary">Add Trip Diary</string>
+    <string name="trip_name">Trip Name</string>
+    <string name="add">Add</string>
+    <string name="london_diary">London Diary</string>
+    <string name="various_versions_have_evolved_over_the_years_sometimes_by_accident">Various versions have evolved over the years, sometimes by accident,</string>
+    <string name="trips_diary">Trips Diary</string>
+    <string name="walk_up">Walk up</string>
+    <string name="richard_mcclintock_a_latin_professor_at_hampden_sydney">Richard McClintock, a Latin professor at Hampden-Sydney.</string>
+    <string name="_206_21st_ave_s">206 21st Ave s</string>
+    <string name="_11_00_am_26_jun_2022">11:00 Am , 26 Jun 2022</string>
+    <string name="lv">LV</string>
+    <string name="all_the_lorem_ipsum_generators_on_the_internet_tend_to_repeat_predefined_chunks">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks</string>
+    <string name="_07_oct_2022">07 Oct, 2022</string>
+    <string name="california">California</string>
+    <string name="worlds">Worlds</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_logout_from_strips_amp_trips_app"><![CDATA[Are you sure want to logout?]]></string>
+    <string name="not_now">Not Now</string>
+    <string name="password_not">password_not</string>
+    <string name="please_enter_confirm_password">please_enter_confirm_password</string>
+    <string name="please_enter_new_password">please_enter_new_password</string>
+    <string name="manage_enter_old_pass">manage_enter_old_pass</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="firstly_create_trip_diary">You have no trips diary. Please create trip diary first.</string>
+    <string name="app_provider" tools:ignore="ExtraTranslation">com.app.stripstrips.provider</string>
+    <string name="user_listing">User</string>
+    <string name="no_data_found">No Trip Created </string>
+    <string name="no_location_found">No location found</string>
+    <string name="internet_connection">internet_connection</string>
+
+    <string name="default_notification_channel_name" translatable="true">Updates</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+</resources>

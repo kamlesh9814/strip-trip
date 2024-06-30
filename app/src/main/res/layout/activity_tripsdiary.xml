@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_67sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/cornours_drawable"
+    android:backgroundTint="@color/profileBackground"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf ="parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="62.5dp"
+        android:layout_height="65.5dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_7sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="62.5dp"
+            android:layout_height="65.5dp"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvLondonDiaries"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="@string/london_diary"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_3sdp"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        tools:ignore="TextViewEdits" />
+
+    <TextView
+        android:id="@+id/descTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="@string/various_versions_have_evolved_over_the_years_sometimes_by_accident"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvLondonDiaries"
+        app:layout_constraintTop_toBottomOf="@+id/tvLondonDiaries"
+        tools:ignore="RtlSymmetry,TextViewEdits" />
+
+<View
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_67sdp"
+    android:id="@+id/viewClick"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
